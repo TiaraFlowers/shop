@@ -20,7 +20,7 @@ function Sidebar({ isOpen, toggleSidebar }) {
       <div className="p-4 flex flex-col h-full">
         <h1 className="text-2xl font-bold">{t('Brand')}</h1>
         <nav className="mt-6 flex-1">
-          <a href="/shop" className="block py-2" onClick={() => toggleSidebar()}>
+          <a href="/shop/#/" className="block py-2" onClick={() => toggleSidebar()}>
             {t('Shop')}
           </a>
           <a href="/shop/#/about" className="block py-2" onClick={() => toggleSidebar()}>
