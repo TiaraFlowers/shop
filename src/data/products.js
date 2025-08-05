@@ -9,9 +9,9 @@ export const products = [
     dimensions: { en: '20x30 cm', fa: '20x30 سانتی‌متر' },
     price: { en: '$100', fa: '۱۰۰ دلار' },
     thumbnails: [
-      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?fit=crop&w=100&h=100',
-      'assets/images/mirror1-2.JPG',
-      'https://images.unsplash.com/photo-1611080626919-7cf5a9dbab5b?fit=crop&w=100&h=100',
+      './assets/images/mirror1',
+      './assets/images/mirror1 (2)',
+      './assets/images/mirror1 (3)',
     ],
   },
   {
