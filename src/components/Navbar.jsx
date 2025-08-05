@@ -5,7 +5,13 @@ function Navbar({ toggleSidebar }) {
 
   return (
     <div className="md:hidden navbar shadow-md p-4 flex justify-between items-center">
-      <h1 className="text-2xl font-bold">{t('Brand')}</h1>
+      <a href="/shop/#/">
+      <img
+        src="./assets/images/w-logo.png"
+        alt={t('Brand')}
+        className="navbar-logo"
+      />
+      </a>
       <button
         onClick={toggleSidebar}
         className="text-white text-3xl hover:text-gray-200 transition-colors"

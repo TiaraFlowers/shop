@@ -18,7 +18,7 @@ a {
 }
 
 a:hover {
-  color: #febb00;
+  /* color: #febb00; */
   border-radius: 50%;
   transform: rotateX(360deg);
   transition: 1000ms;
@@ -59,12 +59,9 @@ button:hover {
   border-right: none;
 }
 
-.sidebar h1 {
-  color: #febb00;
-  font-size: 1.875rem;
-  font-weight: 800;
-  text-align: center;
-  padding: 1rem 0;
+.sidebar-logo {
+  margin-top: 1rem;
+  width: fit-content;
 }
 
 .sidebar a {
@@ -74,19 +71,18 @@ button:hover {
   font-size: 1.125rem;
 }
 
-.sidebar a:hover {
+/* .sidebar a:hover {
   background-color: #febb00;
   color: #ffffff;
-}
+} */
 
 .navbar {
   background-color: #febb00;
 }
 
-.navbar h1 {
-  color: #ffffff;
-  font-size: 1.5rem;
-  font-weight: 700;
+.navbar-logo {
+  width: 40px;
+  height: 40px;
 }
 
 .product-card {

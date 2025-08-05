@@ -18,7 +18,13 @@ function Sidebar({ isOpen, toggleSidebar }) {
       } md:block ${isRtl ? 'right-0' : 'left-0'}`}
     >
       <div className="p-4 flex flex-col h-full">
-        <h1 className="text-2xl font-bold">{t('Brand')}</h1>
+        <a href="/shop/#/">
+        <img
+          src="./assets/images/logo.png"
+          alt={t('Brand')}
+          className="sidebar-logo mx-auto"
+        />
+        </a>
         <nav className="mt-6 flex-1">
           <a href="/shop/#/" className="block py-2" onClick={() => toggleSidebar()}>
             {t('Shop')}
