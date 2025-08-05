@@ -5,7 +5,7 @@ export const products = [
     description: { en: 'Floral Mirror Description', fa: 'آینه‌ای زیبا با گل‌های فشرده' },
     image: './assets/images/mirror1.jpg',
     category: 'Mirrors',
-    material: { en: 'Wood', fa: 'چوب' },
+    material: { en: 'High quality mirror, Pressed Flowers, PVC frame, Steel Hanger', fa: 'آینه با کیفیت بالا، گل‌های فشرده، قاب پی‌وی‌سی، آویز استیل' },
     dimensions: { en: '20x30 cm', fa: '20x30 سانتی‌متر' },
     price: { en: '$100', fa: '۱۰۰ دلار' },
     thumbnails: [
