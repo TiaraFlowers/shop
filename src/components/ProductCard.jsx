@@ -16,7 +16,7 @@ function ProductCard({ product }) {
         <img
           src={product.image}
           alt={product.title[lang]}
-          className="w-full h-48 object-cover rounded-md"
+          className="w-full h-fit object-cover rounded-md"
         />
         <h2 className="text-xl font-semibold mt-2 text-gray-800">{product.title[lang]}</h2>
         <p className="text-gray-600">{product.description[lang]}</p>
