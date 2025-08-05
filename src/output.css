@@ -604,6 +604,9 @@ main {
   [dir="rtl"] main {
     margin-right: 0;
   }
+  .product-card img {
+    height: fit-content;
+  }
 }
 [dir="rtl"] .language-button {
   margin-left: 0.5rem;
