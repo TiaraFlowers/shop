@@ -23,7 +23,7 @@ function Sidebar({ isOpen, toggleSidebar }) {
           <a href="/shop" className="block py-2" onClick={() => toggleSidebar()}>
             {t('Shop')}
           </a>
-          <a href="/shop/about" className="block py-2" onClick={() => toggleSidebar()}>
+          <a href="/shop/#/about" className="block py-2" onClick={() => toggleSidebar()}>
             {t('About')}
           </a>
         </nav>
