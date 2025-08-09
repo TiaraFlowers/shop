@@ -1,8 +1,24 @@
-import { useState } from 'react';
+// src/pages/Shop.jsx
+import React, { useState } from 'react';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import { products } from '../data/products';
 import ProductCard from '../components/ProductCard';
 import { useTranslation } from 'react-i18next';
+
+class ErrorBoundary extends React.Component {
+  state = { hasError: false };
+
+  static getDerivedStateFromError(error) {
+    return { hasError: true };
+  }
+
+  render() {
+    if (this.state.hasError) {
+      return <p className="text-red-600 text-center">Something went wrong with this product.</p>;
+    }
+    return this.props.children;
+  }
+}
 
 function Shop() {
   const { t } = useTranslation();
@@ -65,9 +81,11 @@ function Shop() {
         loader={<h4 className="text-center my-4">{t('Loading')}</h4>}
         endMessage={<p className="text-center my-4">{t('No more products')}</p>}
       >
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full max-w-7xl mx-auto items-start">
           {displayedProducts.map((product) => (
-            <ProductCard key={product.id} product={product} />
+            <ErrorBoundary key={product.id}>
+              <ProductCard product={product} />
+            </ErrorBoundary>
           ))}
         </div>
       </InfiniteScroll>

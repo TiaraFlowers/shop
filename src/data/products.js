@@ -1,18 +1,21 @@
+// src/data/products.js
 export const products = [
   {
     id: 1,
-    title: { en: 'Floral Mirror', fa: 'آینه گل‌دار' },
-    description: { en: 'Floral Mirror Description', fa: 'آینه‌ای زیبا با گل‌های فشرده' },
-    image: './assets/images/mirror1.jpg',
-    category: 'Mirrors',
-    material: { en: 'High quality mirror, Pressed Flowers, PVC frame, Steel Hanger', fa: 'آینه با کیفیت بالا، گل‌های فشرده، قاب پی‌وی‌سی، آویز استیل' },
-    dimensions: { en: '20x30 cm', fa: '20x30 سانتی‌متر' },
-    price: { en: '$100', fa: '۱۰۰ دلار' },
+    title: { en: 'Floral Mirror', fa: 'تابلو فرش قلب' },
+    description: { en: 'Floral Mirror Description', fa: 'تابلو پاسبارتو فرش دست‌ بافت' },
+    image: './assets/images/WallArt1.jpg',
+    category: 'Paintings',
+    material: { en: 'High quality mirror, Pressed Flowers, PVC frame, Steel Hanger', fa: 'فرش دست بافت (با سن حدود نیم قرن)، مقوای پاسبارتو، قاب پی‌وی‌سی، قلاب استیل' },
+    dimensions: { en: '20x30 cm', fa: '۳۰x۳۰ سانتی‌متر' },
+    price: { en: '$100', fa: '۱,۴۲۵,۰۰۰ تومان' },
     thumbnails: [
-      './assets/images/mirror1.jpg',
-      './assets/images/mirror1 (2).jpg',
-      './assets/images/mirror1 (3).jpg',
+      './assets/images/WallArt1.jpg',
+      './assets/images/WallArt1 (2).jpg',
+      './assets/images/WallArt1 (3).jpg',
     ],
+    hasFixedPrice: true,
+    inStock: true,
   },
   {
     id: 2,
@@ -28,6 +31,8 @@ export const products = [
       './assets/images/necklace(1).jpg',
       './assets/images/necklace(2).jpg',
     ],
+    hasFixedPrice: true,
+    inStock: true,
   },
   {
     id: 3,
@@ -43,6 +48,8 @@ export const products = [
       './assets/images/painting1(2).jpg',
       './assets/images/painting1(3).jpg',
     ],
+    hasFixedPrice: true,
+    inStock: false, // Sold out for testing
   },
   {
     id: 4,
@@ -58,6 +65,8 @@ export const products = [
       './assets/images/earring1(2).jpg',
       './assets/images/earring1(3).jpg',
     ],
+    hasFixedPrice: true,
+    inStock: true,
   },
   {
     id: 5,
@@ -73,5 +82,41 @@ export const products = [
       './assets/images/tray1 (2).jpg',
       './assets/images/tray1 (3).jpg',
     ],
+    hasFixedPrice: true,
+    inStock: true,
+  },
+  {
+    id: 6,
+    title: { en: 'Floral Mirror', fa: 'تابلو فرش دایره' },
+    description: { en: 'Floral Mirror Description', fa: 'تابلو پاسبارتو فرش دست‌ بافت' },
+    image: './assets/images/WallArt2.jpg',
+    category: 'Paintings',
+    material: { en: 'High quality mirror, Pressed Flowers, PVC frame, Steel Hanger', fa: 'فرش دست بافت (با سن حدود نیم قرن)، مقوای پاسبارتو، قاب پی‌وی‌سی، قلاب استیل' },
+    dimensions: { en: '20x30 cm', fa: '۳۰x۳۰ سانتی‌متر' },
+    price: { en: '$100', fa: '۱,۴۲۵,۰۰۰ تومان' },
+    thumbnails: [
+      './assets/images/WallArt2.jpg',
+      './assets/images/WallArt2 (2).jpg',
+      './assets/images/WallArt2 (3).jpg',
+    ],
+    hasFixedPrice: true,
+    inStock: true,
+  },
+  {
+    id: 7, // Fixed duplicate id
+    title: { en: 'Floral Mirror', fa: 'تابلو فرش مستطیل' },
+    description: { en: 'Floral Mirror Description', fa: 'تابلو پاسبارتو فرش دست‌ بافت' },
+    image: './assets/images/WallArt3.jpg',
+    category: 'Paintings',
+    material: { en: 'High quality mirror, Pressed Flowers, PVC frame, Steel Hanger', fa: 'فرش دست بافت (با سن حدود نیم قرن)، مقوای پاسبارتو، قاب پی‌وی‌سی، قلاب استیل' },
+    dimensions: { en: '20x30 cm', fa: '۳۰x۳۰ سانتی‌متر' },
+    price: { en: '$100', fa: 'تماس بگیرید' },
+    thumbnails: [
+      './assets/images/WallArt3.jpg',
+      './assets/images/WallArt3 (2).jpg',
+      './assets/images/WallArt3 (3).jpg',
+    ],
+    hasFixedPrice: false, // Requires price inquiry
+    inStock: true,
   },
 ];
